@@ -1,0 +1,17 @@
+{
+  "name": "Portfolio web site",
+  "description": "Portfolio web site with Tailwind CSS",
+  "version": "1.0.0",
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.10",
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./assets/css/index.css -o ./assets/css/tailwind.css",
+    "watch": "tailwindcss -i ./assets/css/index.css -o ./assets/css/tailwind.css --watch",
+    "minify": "npx tailwindcss -o ./assets/css/dist/style.css --minify"
+  },
+  "author": "",
+  "license": "ISC"
+}

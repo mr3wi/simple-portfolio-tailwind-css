@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/dist/style.css">
+  <title>Wilfried WIWI - Portfolio Frontend Dev</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="nav">
+    <div class="container flex items-center justify-between h-16 md:h-20">
+      <h1 class="reletive z-30 font-semibold text-2xl">
+        Wilfried WIWI
+      </h1>
+
+      <div class="flex items-center flex-row-reverse md:flex-row gap-3 md:gap-12">
+        <ul id="menu" class="nav-menus translate-y-[-200%] md:translate-y-0">
+          <a class="nav-link" href="#home" title="Home">Home</a>
+          <a class="nav-link" href="#about" title="About">About</a>
+          <a class="nav-link" href="#portfolio" title="Portfolio">Portfolio</a>
+          <a class="nav-link" href="#contact" title="Contact">Contact</a>
+          <a class="nav-link" href="#about" title="About"> About</a>
+        </ul>
+
+        <!-- Toggle hamburger Menu -->
+        <button id="toggle-menu" class="relative z-30 p-2 md:hidden dark:invert">
+          <img class="w-8" src="./assets/images/icons/icon-menu.svg" alt="menu" title="Menu" />
+        </button>
+
+        <!-- Toggle theme (dark / light) -->
+        <button id="toggle-theme" class="relative z-30 dark:invert">
+          <img class="md:opacity-70 w-7 md:-mt-1" src="./assets/images/icons/toggle-off.svg" alt="toggle-off"
+            title="switch to dark" />
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Home section -->
+    <section id="home" class="home-section">
+      <div class=" order-2 md:order-1 mt-10">
+        <h1 class="text-5xl md:text-7xl font-bol">
+          Hello,
+        </h1>
+        <h2 class="text-5xl md:text-6xl font-bold mt-2">
+          Je suis <span class="text-primary whitespace-nowrap">Wilfried WIWI</span>
+        </h2>
+        <h3 class="text-2xl md:text-3xl font-bold opacity-70 mt-5 mb-10">
+          Developpeur Frontend & Designer
+        </h3>
+
+        <a href="#portfolio" class="btn-primary">Voir mon travail</a>
+
+      </div>
+      <div class="hero-image-container">
+        <img class="w-full h-full object-cover opacity-100 object-center" src="./assets/images/wilfried.png"
+          alt="Wilfried WIWI" />
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="py-32">
+      <div class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20">
+        <div class="rounded-full w-48 md:w-64 h-48 md:h-64 overflow-hidden bg-primary">
+          <img class=" object-cover opacity-100 rounded-full" src="./assets/images/wilfried.png" alt="profile" />
+        </div>
+        <div class="w-full md:w-1/2 text-base md:text-lg text-center md:text-left">
+          <h2 class="text-primary font-bold text-2xl md:text-3xl mb-3">
+            Salut, Je suis Wilfried WIWI
+          </h2>
+          <p class="mb-3 opacity-80">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur facilis, sint sunt provident
+            praesentium, quo neque reiciendis necessitatibus voluptatem soluta sapiente eos doloribus ut ex
+            ducimus vitae placeat? Cum, eius.
+          </p>
+          <p class="opacity-80">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione porro quae amet quaerat culpa
+            totam accusamus, delectus cupiditate perferendis, minus sed aperiam dicta, ex voluptates
+            corrupti et facere necessitatibus officiis.
+          </p>
+        </div>
+      </div>
+
+      <!-- skills -->
+      <div class="mt-32 text-center">
+        <h2 class="text-primary text-3xl md:text-4xl font-bold mb-14">
+          Mes compétences
+        </h2>
+        <div class="flex flex-wrap items-center justify-center gap-24 md:gap-12">
+          <div class="skill" data-text="Expérience 1 ans">
+            <img class="w-16" src="./assets/images/icons/html5.svg" alt="html" title="HTML" />
+          </div>
+          <div class="skill" data-text="Expérience 1 ans">
+            <img class="w-16" src="./assets/images/icons/css3-alt.svg" alt="css" title="CSS" />
+          </div>
+          <div class="skill" data-text="Expérience 1 ans">
+            <img class="w-16" src="./assets/images/icons/js.svg" alt="javascript" title="JavaScript" />
+          </div>
+          <div class="skill" data-text="Expérience 1 ans">
+            <img class="w-16" src="./assets/images/icons/vuejs.svg" alt="vuejs" title="VueJS" />
+          </div>
+          <div class="skill" data-text="Expérience 1 ans">
+            <img class="w-16" src="./assets/images/icons/react.svg" alt="reactjs" title="React JS" />
+          </div>
+          <div class="skill" data-text="Expérience 1 ans">
+            <img class="w-16" src="./assets/images/icons/figma.svg" alt="figma" title="Figma" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex items-center justify-between gap-3 w-full">
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-primary/60 h-3 w-4"></div>
+      <div class="bg-gradient-to-r from-primary/60 to-primary/0 flex-grow h-3"></div>
+    </div>
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="pt-32">
+      <h2 class="portfolio-heading">
+        Mon portfolio
+      </h2>
+      <ul class="w-full md:w-5/6 space-y-10 py-5">
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img class="h-full w-full object-cover" src=" " alt="" />
+          </div>
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Portfolio 1
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam animi distinctio accusamus
+              corrupti reprehenderit rem eos modi commodi sunt nisi nam magni ut delectus, excepturi
+              repellat asperiores! Magni, deleniti ullam.</p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-3">
+              <a href="#" class="portfolio-link bg-primary" title="Github">
+                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github" title="Github">
+                github
+              </a>
+              <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black" title="website">
+                <img class="w-5 h-5" src="./assets/images/icons/globe.svg" alt="glob" title="Glob">
+                website
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img class="h-full w-full object-cover" src=" " alt="" />
+          </div>
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Portfolio 2
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam animi distinctio accusamus
+              corrupti reprehenderit rem eos modi commodi sunt nisi nam magni ut delectus, excepturi
+              repellat asperiores! Magni, deleniti ullam.</p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-3">
+              <a href="#" class="portfolio-link bg-primary" title="Github">
+                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github" title="Github">
+                github
+              </a>
+              <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black" title="website">
+                <img class="w-5 h-5" src="./assets/images/icons/globe.svg" alt="glob" title="Glob">
+                website
+              </a>
+
+            </div>
+          </div>
+        </li>
+
+        <li class="portfolio-card">
+          <div class="w-full md:w-1/3 h-60">
+            <img class="h-full w-full object-cover" src=" " alt="" />
+          </div>
+          <div class="w-full md:w-2/3 p-5">
+            <h2 class="text-3xl font-bold mb-3">
+              Portfolio 3
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam animi distinctio accusamus
+              corrupti reprehenderit rem eos modi commodi sunt nisi nam magni ut delectus, excepturi
+              repellat asperiores! Magni, deleniti ullam.</p>
+            <div class="mt-8 font-semibold text-white flex items-center gap-3">
+              <a href="#" class="portfolio-link bg-primary" title="Github">
+                <img class="w-5 h-5" src="./assets/images/icons/github.svg" alt="github" title="Github">
+                github
+              </a>
+              <a href="#" class="portfolio-link bg-primary-gray dark:bg-primary-black" title="website">
+                <img class="w-5 h-5" src="./assets/images/icons/globe.svg" alt="glob" title="Glob">
+                website
+              </a>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- footer section -->
+  <footer class="w-full text-center mt-40 bg-white dark:bg-primary-gray">
+
+    <!-- contact section -->
+    <div id="contact" class="flex flex-col gap-12 justify-center items-center py-20">
+      <h2 class="text-4xl md:text-5xl font-bold text-primary">
+        Contact
+      </h2>
+      <div class="flex flex-wrap justify-center gap-5 md:gap-10">
+        <a href="#" class="contact-link bg-blue-500">
+          <img class="w-5 h-5" src="./assets/images/icons/facebook.svg" alt="facebook" title="facebook" />
+        </a>
+
+        <a href="#" class="contact-link bg-blue-500">
+          <img class="w-5 h-5" src="./assets/images/icons/linkedin.svg" alt="linkedin" title="linkedin" />
+        </a>
+
+        <a href="#" class="contact-link bg-pink-500">
+          <img class="w-5 h-5" src="./assets/images/icons/instagram.svg" alt="instagram" title="instagram" />
+        </a>
+
+        <a href="#" class="contact-link bg-blue-400">
+          <img class="w-5 h-5" src="./assets/images/icons/twitter.svg" alt="twitter" title="twitter" />
+        </a>
+
+        <a href="#" class="contact-link bg-green-400">
+          <img class="w-5 h-5" src="./assets/images/icons/whatsapp.svg" alt="whatsapp" title="whatsapp" />
+        </a>
+      </div>
+    </div>
+
+    <h2 class="pb-10">
+      &copy; Copyright 2022 - Wilfried WIWI
+    </h2>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
